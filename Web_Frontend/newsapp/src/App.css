@@ -1,0 +1,179 @@
+/* General App Styles */
+.app {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* Top Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3; /* CNN-like red */
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.main-nav li:hover,
+.main-nav li.active {
+  text-decoration: underline;
+}
+
+/* Sub Navigation Bar */
+.sub-nav {
+  background: #f2f2f2;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.trending-topics span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.trending-topics a {
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.trending-topics a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  margin: 20px;
+}
+
+/* Left Column */
+.left-column {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.featured-article {
+  margin-bottom: 30px;
+}
+
+.featured-article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.featured-article h2 {
+  margin-bottom: 10px;
+}
+
+.featured-article p {
+  margin-bottom: 10px;
+}
+
+.featured-article a {
+  color: #CC0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.featured-article a:hover {
+  text-decoration: underline;
+}
+
+/* Other Articles & More News - Unified Card Styling */
+.other-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* More News container uses a slightly smaller grid */
+.more-news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.news-card img {
+  width: 100%;
+  height: auto;
+}
+
+.news-content {
+  padding: 10px;
+}
+
+.news-content h3 {
+  margin: 0 0 10px;
+}
+
+.news-content p {
+  margin: 0 0 10px;
+}
+
+.news-content a {
+  color: #CC0000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-content a:hover {
+  text-decoration: underline;
+}
+
+/* Right Column */
+.right-column {
+  flex: 1;
+}
+
+/* Additional styling for small cards in the right column */
+.news-card.small {
+  font-size: 0.9rem;
+}
+
+.news-card.small img {
+  /* Optionally restrict image height for a more compact look */
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
